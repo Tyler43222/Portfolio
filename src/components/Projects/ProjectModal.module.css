@@ -1,0 +1,219 @@
+@import "../../vars.css";
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(6, 12, 26, 0.72);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+  z-index: 2000;
+}
+
+.dialog {
+  position: relative;
+  width: min(1200px, 94vw);
+  max-height: 92vh;
+  background: #0f1c36;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.45);
+  overflow: auto;
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+}
+
+.close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.08);
+  color: #e8eeff;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: .9fr 1fr;
+  gap: 28px;
+  padding: 28px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  min-height: 260px;
+  background: #09142a;
+}
+
+.heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+}
+
+.headerContent {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.chipRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #e8eeff;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+}
+
+.title {
+  font-size: clamp(26px, 4vw, 34px);
+  font-weight: 800;
+  margin: 0;
+}
+
+.lead {
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(232, 238, 255, 0.9);
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.primary,
+.secondary {
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 150ms ease, box-shadow 150ms ease, background 150ms ease;
+}
+
+.primary {
+  background: #e8eeff;
+  color: #0b1b35;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+}
+
+.primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
+}
+
+.secondary {
+  background: rgba(232, 238, 255, 0.12);
+  color: #e8eeff;
+  border: 1px solid rgba(232, 238, 255, 0.28);
+}
+
+.secondary:hover {
+  background: rgba(232, 238, 255, 0.2);
+}
+
+.body {
+  padding: 0 28px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sectionHeader {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  color: rgba(232, 238, 255, 0.7);
+  margin-top: 4px;
+}
+
+.videoShell {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  overflow: hidden;
+  min-height: 260px;
+}
+
+.videoShell iframe {
+  width: 100%;
+  min-height: 240px;
+  height: min(520px, 60vh);
+  border: none;
+  display: block;
+}
+
+.videoPlaceholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(232, 238, 255, 0.8);
+  height: 100%;
+  padding: 24px;
+}
+
+@media screen and (max-width: 900px) {
+  .header {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: 200px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .backdrop {
+    padding: 14px;
+  }
+
+  .dialog {
+    width: 100%;
+    max-height: 96vh;
+  }
+
+  .header {
+    padding: 20px;
+    gap: 16px;
+  }
+
+  .body {
+    padding: 0 20px 20px;
+  }
+}

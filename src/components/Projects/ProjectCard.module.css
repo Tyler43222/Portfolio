@@ -1,0 +1,154 @@
+@import "../../vars.css";
+
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  width: min(560px, 100%);
+  aspect-ratio: 16 / 10;
+  min-height: 280px;
+  background: #0b1b35;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.2);
+  transition: transform 260ms ease, box-shadow 260ms ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 26px 60px rgba(0, 0, 0, 0.45);
+}
+
+.image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 360ms ease;
+}
+
+.card:hover .image {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 18px 20px;
+  background: linear-gradient(180deg, rgba(5, 10, 25, 0.05) 0%, rgba(5, 10, 25, 0.45) 45%, rgba(5, 10, 25, 0.9) 120%);
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: clamp(12px, 1.7vw, 13px);
+  font-weight: 600;
+  letter-spacing: 0.1px;
+  color: #e8eeff;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(4px);
+}
+
+.textBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.title {
+  font-size: clamp(22px, 2.6vw, 28px);
+  font-weight: 800;
+  color: #e8eeff;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.45);
+}
+
+.description {
+  font-size: clamp(14px, 2.2vw, 16px);
+  font-weight: 400;
+  line-height: 1.4;
+  color: rgba(232, 238, 255, 0.9);
+  max-width: 640px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.action {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-size: clamp(13px, 2vw, 14px);
+  font-weight: 700;
+  text-decoration: none;
+  color: #0b1b35;
+  background: #e8eeff;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+  transition: transform 200ms ease, box-shadow 200ms ease, background 200ms ease, color 200ms ease;
+  border: none;
+  cursor: pointer;
+}
+
+.action:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.32);
+}
+
+.secondary {
+  background: rgba(232, 238, 255, 0.12);
+  color: #e8eeff;
+  border: 1px solid rgba(232, 238, 255, 0.32);
+  box-shadow: none;
+}
+
+.secondary:hover {
+  background: rgba(232, 238, 255, 0.2);
+}
+
+@media screen and (max-width: 700px) {
+  .card {
+    width: 100%;
+    border-radius: 18px;
+  }
+
+  .overlay {
+    padding: 14px 16px 18px;
+    gap: 10px;
+  }
+
+  .title {
+    font-size: 21px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .actions {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .action {
+    width: fit-content;
+  }
+}
