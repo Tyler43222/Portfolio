@@ -52,6 +52,11 @@
   width: 75px;
 }
 
+img[alt="Django"] {
+  margin-right: 12px;
+  margin-top: 7px;
+}
+
 .skill p {
   font-size: 25px;
   font-family: var(--font-roboto);
@@ -119,4 +124,20 @@
     width: 100%;
     gap: 9px;
   }
+  .historyItemDetails h3 {
+  font-size: 24px;
+  font-weight: 500;
+  }
+
+.historyItemDetails p {
+  font-size: 17px;
+  font-weight: 300;
+}
+.historyItemDetails ul {
+  margin-top: 6px;
+  list-style-position: inside;
+  font-size: 20px;
+  list-style-type: disc;
+  margin-left: 0px;
+}
 }

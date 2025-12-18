@@ -44,6 +44,7 @@
   font-size: 30px;
   font-weight: 400;
   letter-spacing: 1.5px;
+  font-size: clamp(20px, 4vw, 30px);
 }
 
 @media screen and (max-width: 830px) {

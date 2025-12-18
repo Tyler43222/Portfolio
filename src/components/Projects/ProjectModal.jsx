@@ -37,8 +37,7 @@ export const ProjectModal = ({ project, onClose, autoPlay }) => {
     const dialogEl = dialogRef.current;
     const videoEl = videoContainerRef.current;
     if (dialogEl && videoEl) {
-      const offset = videoEl.offsetTop;
-      dialogEl.scrollTo({ top: 120, behavior: "smooth" });
+      dialogEl.scrollTo({ top: dialogEl.scrollHeight, behavior: "smooth" });
     } else {
       videoEl?.scrollIntoView({ behavior: "smooth", block: "start" });
     }
@@ -81,7 +80,7 @@ export const ProjectModal = ({ project, onClose, autoPlay }) => {
                   rel="noopener noreferrer"
                   className={styles.primary}
                 >
-                  Source Code
+                  GitHub
                 </a>
               )}
             </div>

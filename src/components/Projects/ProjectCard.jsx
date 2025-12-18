@@ -36,7 +36,7 @@ export const ProjectCard = ({
               onDemo?.();
             }}
           >
-            Live Demo
+            Demo
           </button>
           <a
             href={source}
@@ -45,7 +45,7 @@ export const ProjectCard = ({
             rel="noopener noreferrer"
             onClick={(e) => e.stopPropagation()}
           >
-            Source
+            GitHub
           </a>
         </div>
       </div>

@@ -1,11 +1,11 @@
 [
   {
     "title": "Qube Social Network",
-    "imageSrc": "projects/Screenshot 2025-12-17 at 3.03.36 PM.png",
+    "imageSrc": "projects/qube-social.png",
     "description": "Social media feed with sorting algorithm",
     "longDescription": "Real-time data streaming with LSTM-based forecasting, custom WebGL visualizations, and integrated 2FA for secure access.",
     "skills": ["Django", "SQL", "JavaScript", "Bootstrap"],
-    "demo": "https://youtu.be/qWUINlKI_-s",
+    
     "source": "https://github.com/Tyler43222/Qube_Social_Network",
     "videoUrl": "https://www.youtube.com/embed/qWUINlKI_-s"
   },
@@ -25,16 +25,6 @@
     "description": "Secure portfolio tracker for digital assets.",
     "longDescription": "Multi-chain wallet insights with live pricing, staking analytics, and granular alerts using Next.js and Solidity integrations.",
     "skills": ["Web3.js", "Solidity", "Next.js", "Ethereum"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com",
-    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-  },
-  {
-    "title": "Lumina Workspace",
-    "imageSrc": "projects/project.png",
-    "description": "Realtime collaboration dashboard.",
-    "longDescription": "AI Nexus is a state-of-the-art predictive analytics platform. It leverages deep learning models to process millions of data points across global markets in real-time. By implementing advanced LSTM networks, the dashboard provides users with actionable insights and potential market shifts before they happen, effectively democratizing institutional-grade financial tools for independent traders.",
-    "skills": ["TypeScript", "Socket.io", "PostgreSQL", "Redis"],
     "demo": "https://www.example.com",
     "source": "https://www.github.com",
     "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
