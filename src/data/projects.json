@@ -3,30 +3,9 @@
     "title": "Qube Social Network",
     "imageSrc": "projects/qube-social.png",
     "description": "Social media feed with sorting algorithm",
-    "longDescription": "Real-time data streaming with LSTM-based forecasting, custom WebGL visualizations, and integrated 2FA for secure access.",
+    "longDescription": "Social media app that allows users to create and edit posts, like and make comments, follow other users, search for content, and upload a profile pic and biography. Features efficient database CRUD, infinite scroll that dynamically loads posts in the feed, and a sorting algorithm that sorts posts by their relevance (detailed in the repo's README).",
     "skills": ["Django", "SQL", "JavaScript", "Bootstrap"],
-    
     "source": "https://github.com/Tyler43222/Qube_Social_Network",
     "videoUrl": "https://www.youtube.com/embed/qWUINlKI_-s"
-  },
-  {
-    "title": "EcoSphere Mobile",
-    "imageSrc": "projects/project.png",
-    "description": "IoT-powered sustainability tracker.",
-    "longDescription": "Mobile app for monitoring household energy and air quality with Firebase sync, push alerts, and D3.js visualizations.",
-    "skills": ["React Native", "Firebase", "IoT", "D3.js"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com",
-    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-  },
-  {
-    "title": "CryptoVault Pro",
-    "imageSrc": "projects/project.png",
-    "description": "Secure portfolio tracker for digital assets.",
-    "longDescription": "Multi-chain wallet insights with live pricing, staking analytics, and granular alerts using Next.js and Solidity integrations.",
-    "skills": ["Web3.js", "Solidity", "Next.js", "Ethereum"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com",
-    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
   }
 ]
