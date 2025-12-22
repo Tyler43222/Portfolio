@@ -9,12 +9,12 @@
     "videoUrl": "https://www.youtube.com/embed/qWUINlKI_-s"
   },
   {
-    "title": "Jetpack Joyride Game",
+    "title": "Jetpack Joyride",
     "imageSrc": "projects/jetpack.png",
     "description": "Arcade-style game",
     "longDescription": "This game is the final project for my data structures & algorithms class and is based on the popular mobile game Jetpack Joyride.",
     "skills": ["Java"],
     "source": "https://github.com/Tyler43222/jetpack_joyride",
-    "videoUrl": "https://www.youtube.com/watch?v=46Dl83y7rNM"
+    "videoUrl": "https://www.youtube.com/embed/46Dl83y7rNM"
   }
 ]
