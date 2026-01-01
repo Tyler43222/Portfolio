@@ -38,5 +38,9 @@
   {
     "title": "Figma",
     "imageSrc": "skills/figma.png"
+  },
+  {
+    "title": "TensorFlow",
+    "imageSrc": "skills/TensorFlow.png"
   }
 ]

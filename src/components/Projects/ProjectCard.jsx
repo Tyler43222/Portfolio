@@ -4,7 +4,7 @@ import styles from "./ProjectCard.module.css";
 import { getImageUrl } from "../../utils";
 
 export const ProjectCard = ({
-  project: { title, imageSrc, description, skills, demo, source },
+  project: { title, imageSrc, description, skills, demo, source, website, demo_to_website },
   onSelect,
   onDemo,
 }) => {
@@ -33,7 +33,11 @@ export const ProjectCard = ({
             className={styles.action}
             onClick={(e) => {
               e.stopPropagation();
-              onDemo?.();
+              if (demo_to_website) {
+                window.open(website, "_blank", "noopener,noreferrer");
+              } else {
+                onDemo?.();
+              }
             }}
           >
             Demo

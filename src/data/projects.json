@@ -3,10 +3,11 @@
     "title": "Skin Scan",
     "imageSrc": "projects/skinscan.png",
     "description": "Melanoma classification model",
-    "longDescription": "This game is the final project for my data structures & algorithms class and is based on the popular mobile game Jetpack Joyride.",
-    "skills": ["Python, TensorFlow, Streamlit"],
+    "longDescription": "I built a convolutional neural network to classify images of skinspots as benign or malignant with 92% accuracy on the testing set. I also built a Streamlit interface where users can upload images of their own skinspots to classify and see a Grad-CAM heatmap revealing the specific regions of the skinspot that lead to the model's prediction.",
+    "skills": ["Python", "TensorFlow", "Streamlit"],
     "source": "https://github.com/Tyler43222/melanoma_classification",
-    "website": "https://melanoma-classification.streamlit.app/"
+    "website": "https://melanoma-classification.streamlit.app/",
+    "demo_to_website": true
   },
   {
     "title": "Qube Social Network",

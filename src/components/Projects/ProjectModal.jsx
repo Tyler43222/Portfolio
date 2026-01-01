@@ -84,8 +84,6 @@ export const ProjectModal = ({ project, onClose, autoPlay }) => {
                   GitHub
                 </a>
               )}
-            </div>
-            <div className={styles.actions}>
               {website && (
                 <a
                   href={website}
@@ -99,11 +97,10 @@ export const ProjectModal = ({ project, onClose, autoPlay }) => {
             </div>
           </div>
         </div>
-        {iframeSrc ? (
+        {iframeSrc && (
         <div className={styles.body}>
           <div className={styles.sectionHeader}>Project Demo</div>
           <div className={styles.videoShell} ref={videoContainerRef}>
-            
               <iframe
                 src={iframeSrc}
                 title={`${title} demo video`}
@@ -112,8 +109,6 @@ export const ProjectModal = ({ project, onClose, autoPlay }) => {
               />
             </div>
         </div>
-            ) : (
-              <div className={styles.videoPlaceholder}></div>
             )}
         </div>
     </div>
