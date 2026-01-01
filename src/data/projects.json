@@ -1,9 +1,18 @@
 [
   {
+    "title": "Skin Scan",
+    "imageSrc": "projects/skinscan.png",
+    "description": "Melanoma classification model",
+    "longDescription": "This game is the final project for my data structures & algorithms class and is based on the popular mobile game Jetpack Joyride.",
+    "skills": ["Python, TensorFlow, Streamlit"],
+    "source": "https://github.com/Tyler43222/melanoma_classification",
+    "website": "https://melanoma-classification.streamlit.app/"
+  },
+  {
     "title": "Qube Social Network",
     "imageSrc": "projects/qube-social.png",
     "description": "Social media feed with sorting algorithm",
-    "longDescription": "Social media app that allows users to create and edit posts, like and make comments, follow other users, search for content, and upload a profile pic and biography. Features efficient database CRUD, infinite scroll that dynamically loads posts in the feed, and a sorting algorithm that sorts posts by their relevance (detailed in the repo's README).",
+    "longDescription": "Social media app that allows users to create and edit posts, like and make comments, follow other users, search for content, and upload a profile pic and biography. Features efficient database CRUD, infinite scroll that dynamically loads posts in the feed, mobile responsive design, and a sorting algorithm that sorts posts by their relevance (detailed in the repo's README).",
     "skills": ["Django", "SQL", "JavaScript", "Bootstrap"],
     "source": "https://github.com/Tyler43222/Qube_Social_Network",
     "videoUrl": "https://www.youtube.com/embed/qWUINlKI_-s"
@@ -17,4 +26,5 @@
     "source": "https://github.com/Tyler43222/jetpack_joyride",
     "videoUrl": "https://www.youtube.com/embed/46Dl83y7rNM"
   }
+
 ]

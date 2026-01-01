@@ -12,6 +12,7 @@ export const ProjectModal = ({ project, onClose, autoPlay }) => {
     skills = [],
     demo,
     source,
+    website,
     videoUrl,
   } = project;
 
@@ -84,25 +85,37 @@ export const ProjectModal = ({ project, onClose, autoPlay }) => {
                 </a>
               )}
             </div>
+            <div className={styles.actions}>
+              {website && (
+                <a
+                  href={website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.secondary}
+                >
+                  Website
+                </a>
+              )}
+            </div>
           </div>
         </div>
-
+        {iframeSrc ? (
         <div className={styles.body}>
           <div className={styles.sectionHeader}>Project Demo</div>
           <div className={styles.videoShell} ref={videoContainerRef}>
-            {iframeSrc ? (
+            
               <iframe
                 src={iframeSrc}
                 title={`${title} demo video`}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               />
-            ) : (
-              <div className={styles.videoPlaceholder}>No video provided</div>
-            )}
-          </div>
+            </div>
         </div>
-      </div>
+            ) : (
+              <div className={styles.videoPlaceholder}></div>
+            )}
+        </div>
     </div>
   );
 };
